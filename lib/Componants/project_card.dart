@@ -37,20 +37,39 @@ Widget projectCard(){
                       fontWeight: FontWeight.bold),
                 ),
               ),
-              Container(
-                child: CircleAvatar(
-                  backgroundColor: Colors.white,
-
-                  child: CircularProgressIndicator(
-                    value: .85,
-
-                  ),
+              SizedBox(
+                height: 45,
+                width: 45,
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    CircularProgressIndicator(
+                      value: .85,
+                      valueColor: AlwaysStoppedAnimation(Colors.blue),
+                      strokeWidth: 5,
+                      backgroundColor: Colors.white,
+                    ),
+                    Center(
+                      child: Text("85%"),
+                    ),
+                  ],
                 ),
-              ), //circle
+              ),
+
+              // Container(
+              //   child: CircleAvatar(
+              //     backgroundColor: Colors.white,
+              //
+              //     child: CircularProgressIndicator(
+              //       value: .85,
+              //
+              //     ),
+              //   ),
+              // ), //circle
             ],
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8),
+            padding: const EdgeInsets.symmetric(vertical: 6),
             child: Container(
               width: 70,
               height: 20,
