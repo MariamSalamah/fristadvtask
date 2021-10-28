@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class memberCard extends StatelessWidget {
+class PicCard extends StatelessWidget {
   String imgUrl;
-  memberCard(this.imgUrl);
+  PicCard(this.imgUrl);
 
   @override
   Widget build(BuildContext context) {

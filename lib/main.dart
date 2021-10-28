@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fristadvtask/home_page.dart';
+// import 'package:fristadvtask/home_page.dart';
+
+import 'homeApp/home_rooms_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +16,8 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(
       //   primarySwatch: Colors.blue,
       // ),
-      home: HomePage()
+      home: HomeRoomsPage()
+      //HomePage()
     );
   }
 }

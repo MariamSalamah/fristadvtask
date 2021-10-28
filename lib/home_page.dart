@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fristadvtask/Componants/project_card.dart';
 
+import 'group_page.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -161,7 +163,11 @@ class _HomePageState extends State<HomePage> {
                          // mainAxisSpacing: 10,
                         childAspectRatio: 1),
                     itemBuilder: (context, index) {
-                      return projectCard();
+                      return InkWell(
+                          onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => GroupPage()));
+                          },
+                          child: projectCard());
                     }),
              ),
 

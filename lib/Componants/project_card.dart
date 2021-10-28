@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'member_card.dart';
+import 'pic_card.dart';
 Widget projectCard(){
   return Padding(
     padding: const EdgeInsets.all(10),
@@ -105,29 +105,29 @@ Widget projectCard(){
                   ),
                   Positioned(
                     left: 5,
-                    child: memberCard(
+                    child: PicCard(
                         'https://image.freepik.com/free-photo/positive-male-customer-presenting-new-product_74855-3636.jpg'),
                   ),
                   Positioned(
                       left: 25,
-                      child: memberCard(
+                      child: PicCard(
                           'https://image.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg')),
                   Positioned(
                       left: 45,
-                      child: memberCard(
+                      child: PicCard(
                           'https://image.freepik.com/free-photo/happy-man-with-arms-crossed_23-2148221706.jpg')),
                   Positioned(
                     left: 65,
-                    child: memberCard(
+                    child: PicCard(
                         'https://image.freepik.com/free-photo/positive-male-customer-presenting-new-product_74855-3636.jpg'),
                   ),
                   Positioned(
                       left: 85,
-                      child: memberCard(
+                      child: PicCard(
                           'https://image.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg')),
                   Positioned(
                       left: 105,
-                      child: memberCard(
+                      child: PicCard(
                           'https://image.freepik.com/free-photo/happy-man-with-arms-crossed_23-2148221706.jpg')),
 
                 ],
